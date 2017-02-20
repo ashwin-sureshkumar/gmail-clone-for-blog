@@ -1,3 +1,5 @@
-<p>
-  gm-side-nav works!
-</p>
+<ul>
+  <li *ngFor="let menu of menus" [routerLink]="menu.link">
+    {{ menu.title}}
+  </li>
+</ul>

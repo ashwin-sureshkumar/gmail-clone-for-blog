@@ -1,0 +1,12 @@
+div {
+  display: flex;
+
+  .side-nav {
+    flex: 1 0 0;
+  }
+
+  .router-content {
+    flex: 6 0 0;
+  }
+
+}
