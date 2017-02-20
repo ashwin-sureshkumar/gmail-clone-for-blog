@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+    font-family: 'Roboto, sans-serif';
+}
+
+ul {
+  list-style: none;
+}

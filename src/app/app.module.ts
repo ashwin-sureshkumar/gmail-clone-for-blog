@@ -4,11 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
+// App components
 import { AppComponent } from './app.component';
+import { GmSideNavModule } from './gm-side-nav/gm-side-nav.module';
+import { GmTopNavModule } from './gm-top-nav/gm-top-nav.module';
+import { GmDetailModule } from './gm-detail/gm-detail.module';
 
 //Third Party libraries
 
 import { MaterialModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +24,10 @@ import { MaterialModule } from '@angular/material';
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    GmTopNavModule,
+    GmDetailModule,
+    GmSideNavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
