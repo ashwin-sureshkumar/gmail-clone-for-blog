@@ -6,6 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+//Third Party libraries
+
+import { MaterialModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,6 +18,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    MaterialModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],
