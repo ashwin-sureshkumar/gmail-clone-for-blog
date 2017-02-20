@@ -1,4 +1,9 @@
 :host {
     flex: 1 0 0;
     display: flex;
+    justify-content: flex-end;
+}
+
+md-icon {
+  margin: 0 15px;
 }
