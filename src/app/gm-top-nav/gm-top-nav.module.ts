@@ -6,11 +6,15 @@ import { NavSearchComponent } from './nav-search/nav-search.component';
 import { NavProfileComponent } from './nav-profile/nav-profile.component';
 import { MdToolbarModule } from '@angular/material';
 import { MdIconModule } from '@angular/material';
+import { MdInputModule } from '@angular/material';
+import { MdButtonModule} from '@angular/material';
 @NgModule({
   imports: [
     CommonModule,
     MdToolbarModule,
-    MdIconModule
+    MdIconModule,
+    MdInputModule,
+    MdButtonModule
   ],
   declarations: [NavComponent, NavLogoComponent, NavSearchComponent, NavProfileComponent],
   exports: [NavComponent]
