@@ -9,6 +9,7 @@ import { DraftsComponent } from './gm-detail/drafts/drafts.component';
 import { PrimaryComponent } from './gm-detail/inbox/primary/primary.component';
 import { SocialComponent } from './gm-detail/inbox/social/social.component';
 import { PromotionsComponent } from './gm-detail/inbox/promotions/promotions.component';
+import { EmailComponent } from './gm-email/email/email.component';
 
 
 const routes: Routes = [
@@ -59,6 +60,14 @@ const routes: Routes = [
   {
     path: 'drafts',
     component: DraftsComponent
+  },
+  {
+    path: ':section/:id',
+    component : EmailComponent
+  },
+  {
+    path: ':section/:subSection/:id',
+    component: EmailComponent
   }
 ];
 
