@@ -1,0 +1,27 @@
+
+:host {
+  width: 100%;
+}
+
+.item {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  display: flex;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+
+  span {
+    padding: 0 5px;
+  }
+
+  .actions {
+    flex: 1 0 0;
+  }
+  .name {
+    flex: 2 0 0;
+  }
+  .title {
+    flex: 8 0 0;
+  }
+}
