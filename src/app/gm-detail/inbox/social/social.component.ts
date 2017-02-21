@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailService } from '../../../shared/services/services.module';
 
 @Component({
   selector: 'gm-social',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialComponent implements OnInit {
 
-  constructor() { }
+  constructor(private emailService: EmailService) { }
 
   ngOnInit() {
+    this.emailService.getEmails('social').do(console.log).subscribe();
   }
 
 }
