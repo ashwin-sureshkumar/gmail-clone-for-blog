@@ -20,4 +20,8 @@ export class EmailService {
   getEmails(section: string) {
     return Observable.of(mockEmails.hasOwnProperty(section) ? mockEmails[section] : []);
   }
+
+  getEmail(section: string, id: number) {
+    return mockEmails[section].find((email) => email.id === id);
+  }
 }

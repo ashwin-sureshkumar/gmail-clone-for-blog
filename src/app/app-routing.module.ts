@@ -15,7 +15,7 @@ import { EmailComponent } from './gm-email/email/email.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/inbox',
+    redirectTo: '/inbox/primary',
     pathMatch: 'full'
   },
   {
