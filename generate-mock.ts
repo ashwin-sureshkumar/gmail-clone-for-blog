@@ -24,7 +24,9 @@ const createEmail = () => {
       lastName: faker.name.lastName(),
     },
     title: faker.lorem.sentence(),
-    body: faker.lorem.paragraphs()
+    body: faker.lorem.paragraphs(),
+    date: faker.date.recent(),
+    read: faker.random.boolean()
   };
 };
 
@@ -34,7 +36,7 @@ const createEmails = (count) => {
     emails.push(createEmail());
     count--;
   }
-  return JSON.stringify(emails);
+  return JSON.stringify(emails.sort((a,b) => b.date - a.date));
 }
 
 const createSections = (section) => {
