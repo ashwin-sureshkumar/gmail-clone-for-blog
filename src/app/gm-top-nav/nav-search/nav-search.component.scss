@@ -2,3 +2,18 @@
   display: flex;
   flex: 3 0 0;
 }
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+md-input-container {
+  flex: 1 0 0;
+}
+
+button {
+  height: 40px;
+  margin: 10px 0 0 5px;
+}
