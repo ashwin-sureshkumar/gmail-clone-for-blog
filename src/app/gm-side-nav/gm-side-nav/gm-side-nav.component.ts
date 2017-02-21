@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SideNavMenu } from './side-nav-menu.interface';
+
 @Component({
   selector: 'gm-side-nav',
   templateUrl: './gm-side-nav.component.html',
@@ -27,7 +27,7 @@ export class GmSideNavComponent implements OnInit {
     },
     {
       title: 'Sent Mail',
-      link: '/sent-mail',
+      link: '/sent',
       count: 0
     },
     {
@@ -36,8 +36,8 @@ export class GmSideNavComponent implements OnInit {
       count: 0
     },
     {
-      title: 'Deleted Items',
-      link: '/deleted-items',
+      title: 'Trash',
+      link: '/trash',
       count: 0
     }];
   }
