@@ -1,3 +1,11 @@
-<p>
-  inbox works!
-</p>
+<nav md-tab-nav-bar>
+  <a md-tab-link
+     *ngFor="let tab of inboxLinks"
+     [routerLink]="tab.link"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{tab.label}}
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
