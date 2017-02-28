@@ -10,10 +10,13 @@ import { ChatComponent } from './chat/chat.component';
 import { LabsComponent } from './labs/labs.component';
 import { ThemesComponent } from './themes/themes.component';
 import { MdTabsModule } from '@angular/material';
+import { routes } from './gm-settings.routing';
+
+
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule,
+    RouterModule.forChild(routes),
     MdTabsModule
   ],
   declarations: [SettingsComponent, GeneralComponent, InboxComponent, LabelsComponent,
