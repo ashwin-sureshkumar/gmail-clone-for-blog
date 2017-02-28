@@ -40,7 +40,7 @@ const createEmails = (count) => {
 }
 
 const createSections = (section) => {
-  fs.writeFileSync(`${directory}/${section}.json`, createEmails(10), { flag: 'w' });
+  fs.writeFileSync(`${directory}/${section}.json`, createEmails(20), { flag: 'w' });
 };
 
 

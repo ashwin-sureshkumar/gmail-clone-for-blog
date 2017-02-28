@@ -10,10 +10,11 @@ import { GmSideNavModule } from './gm-side-nav/gm-side-nav.module';
 import { GmTopNavModule } from './gm-top-nav/gm-top-nav.module';
 import { GmDetailModule } from './gm-detail/gm-detail.module';
 import { GmEmailModule } from './gm-email/gm-email.module';
+import { GmSettingsModule } from './gm-settings/gm-settings.module';
 import { SharedModule } from './shared/shared.module';
+
 //Third Party libraries
 import { MaterialModule } from '@angular/material';
-
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MaterialModule } from '@angular/material';
     GmDetailModule,
     GmSideNavModule,
     GmEmailModule,
+    GmSettingsModule,
     SharedModule
   ],
   providers: [],

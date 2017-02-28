@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { NavLogoComponent } from './nav-logo/nav-logo.component';
 import { NavSearchComponent } from './nav-search/nav-search.component';
@@ -14,7 +15,8 @@ import { MdButtonModule} from '@angular/material';
     MdToolbarModule,
     MdIconModule,
     MdInputModule,
-    MdButtonModule
+    MdButtonModule,
+    RouterModule
   ],
   declarations: [NavComponent, NavLogoComponent, NavSearchComponent, NavProfileComponent],
   exports: [NavComponent]
